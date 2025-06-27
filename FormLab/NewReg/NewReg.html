@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration Form</title>
+    <!-- link Cssfile -->
+    <link rel="stylesheet" href="/FormLab/Common Files/common.css">
+    <link rel="stylesheet" href="NewReg.css">
+
+</head>
+
+<body>
+    <!-- header -> img , h1 , img  -->
+    <header class="header">
+        <div>
+            <img class="DHE" src="/FormLab/items/mhrdNewNeet.png" alt="DHE">
+        </div>
+        <div class="JEE">
+            <h1>Joint Entrance Examination (Main) <br>
+                JEE (Main) - 2025</h1>
+        </div>
+        <div>
+            <img class="NTA" src="/FormLab/items/NTA_logo.png" alt="NTA">
+        </div>
+    </header>
+
+    <!-- nav  -->
+    <nav class="nav1">
+        <a class="Home"   href="#" onclick="HomeNav()" >
+            <img src="/FormLab/items/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" >Home</a>
+    </nav>
+    <!-- click home nav then open aside bar -->
+    <div id="HomeNav">
+        <table >
+            <tr>
+                <th><a href="/FormLab/LoginPage.html">Login Page</a></th>
+            </tr>
+            <tr>
+                <th><a href="NewReg.html">New Registration</a></th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1 class="h1">Presonal Information</h1>
+        
+        <form onsubmit="return Verify()" action="Application.html" target="_blank"  >
+            <fieldset class="form">
+                <div class="formdiv">
+
+                    <label class="lb" for="Name"> Candidate's Name </label>
+                    <input class="input1" type="text" id="Name" name="Candidate'sName" placeholder="Enter Full Name"
+                        required autofocus maxlength="15" minlength="3" > <br>
+                    <label class="lb1" for="FName"> Father Name </label>
+                    <input class="input2" type="text" id="FName" name="FatherName" placeholder="Enter Father Name"
+                        required autofocus maxlength="15" minlength="3"> <br>
+                    <label class="lb2" for="MName"> Mother Name </label>
+                    <input class="input3" type="text" id="MName" name="MotherName" placeholder="Enter Mother Name"
+                         autofocus maxlength="15" minlength="3"> <br>
+                    <div class="RG">
+
+                        <div>
+                            <label class="lb3" for="Dob">D.O.B</label>
+                            <input id="Dob" type="date" name="D.O.B" required> <br>
+                        </div>
+                        <div class="gnd">
+                            <label for="gender" required>Gender &nbsp;</label>
+                            <input type="radio" name="Gender" id="Male" required>
+                            <label for="Male">Male</label>
+                            <input type="radio" name="Gender" id="Female" required>
+                            <label for="Female">Female</label> <br>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <label class="lb4" for="Mob"> Mob. No. </label>
+                        <span>
+                            <input class="input4" type="text" id="Mob" name="Mob.No" placeholder="Enter Mob. Number"  required oninput="this.value = this.value.replace(/[^0-9]/g,'')" maxlength="10" title="Enter correct Mobile Number" > 
+                             <br>
+                            <span id="MnoEr" style="color: red;"></span>
+                        </span>
+                        <label class="lb5" for="Email"> Email id </label>
+                        <input class="input6" type="email" id="Email" name="Email" placeholder="Enter Email id" required
+                            autofocus> <br>
+
+                        <div class="Cpass">Choose Password</div>
+                        <div >
+
+                            <label class="lbp" for="pass"> Password </label> 
+                            <span class="FPB2" >
+                                <input class="input6" type="password" id="password" name="Email" placeholder="Creat Your Password" required
+                                autofocus maxlength="13" minlength="8" title="must be 8 to 13 character long"> 
+                                <button type="button" onclick="showPass()" id="sHide"><img id="sHideimg" src="/FormLab/items/visibility_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+                            </span> <br>
+
+                            <label class="lbcp" for="Cpass"> Confirm Password </label>
+                          <input class="input6" type="password" id="Cpass" name="ConfirmPass" placeholder="Confirm  Password" required
+                              autofocus maxlength="13" minlength="8"> <br>  
+                        </div>
+
+                        <!-- <div class="ATP">
+                            <Button onclick="OTP()" type="button" class="SNDOTP ">Send OTP</Button>
+                            <input type="tel" name="OTP" id="OTP" maxlength="6" placeholder="Enter OTP">
+                        </div> -->
+
+                    </div>
+
+                    <!-- <Button>Send OTP</Button> <br> -->
+                    <!-- <input type="submit" value="Verify OTP" name="OTP" id=""> -->
+                    <!-- <input class="input7" type="tel" name="OTP" id="GOTP" maxlength="6" placeholder="Enter OTP"> <br> -->
+
+
+                    <label class="lb6" for="CAPTCHA">CAPTCHA as shown below </label>
+                    <input class="input6" type="text" name="" id="CAPTCHA" name="CAPTCHA" required> <br>
+
+                    <label class="lcap" for="cp">CAPTCHA </label>
+                    <input type="text" name="" id="cap" readonly disabled oncopy="return false" oncut="return false" onpaste="
+                    return false" >
+
+                    <button type="button" class="ButtonC" onclick="RCap()">
+                        <img class="refresh" src="/FormLab/items/autorenew_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </button> <br>
+
+                    <input class="submit" type="reset"  name="submit">
+                    <input class="submit" type="submit" name="submit">
+
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h4 class="FContact"> Contact</h4>
+            <ul>
+                <li>First Floor, ML Bhawan, <br> Haridwar University, Roorkee <br>Uttrakhand</li>
+                <li>Mob No :- <a href="Tel:9693032585"><span>9693032585</span></a></li>
+                <li class="Email">Email :- <a href="Mailto:ashishkumar.bcse2024@huroorkee.ac.in"><span>ashishkumar.bcse2024@huroorkee.ac.in</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- javascript files  -->
+
+
+    <script src="NewReg.js"></script>
+    <script src="StoreInfo.js"></script>
+    <script src="/FormLab/Common Files/Common.js"></script>
+</body>
+
+</html>

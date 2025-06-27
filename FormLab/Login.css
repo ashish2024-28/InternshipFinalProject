@@ -1,0 +1,320 @@
+
+
+
+
+.sel {
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 5px;
+    width: 357px;
+    padding: 5px;
+    margin: 10px 0px 25px 0px;
+}
+
+.lb1 {
+    margin-right: 120px;
+    /* margin-right: 125px; */
+    font-size: 20px;
+
+}
+
+.input1 {
+    border-radius: 5px;
+    width: 344px;
+    padding: 5px;
+    margin: 10px 0px 25px 0px;
+}
+
+.lb2 {
+    margin-right: 223px;
+    font-size: 20px;
+
+}
+
+.input2 {
+    border-radius: 5px;
+    width: 345px;
+    padding: 5px;
+    margin: 10px 0px 25px 0px;
+}
+.FPB2 span{
+    position: relative;
+}
+#sHide {
+    position: absolute;
+    z-index: 1;
+    height: 28px;
+    width: 45px;
+    background-color: white;
+    top: -12%;
+    right: 1%;
+    border-radius: 5px;
+    border: none;
+}
+
+#sHideimg {
+    width: 30px;
+}
+
+.lb3 {
+    margin-right: 59px;
+    font-size: 20px;
+
+}
+
+.input3 {
+    border-radius: 5px;
+    width: 345px;
+    padding: 5px;
+    margin: 10px 0px 25px 0px;
+}
+
+
+.submit {
+    margin: 5vh;
+    width: 120px;
+    padding: 7px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.851);
+    border: 2px solid rgba(222, 82, 31, 0.851);
+    border-radius: 5px;
+}
+
+.line {
+    margin: 20px;
+    border: 2px solid;
+}
+
+.form2 {
+    padding: 20px 0px 20px 15px;
+    margin: auto;
+    width: 60vw;
+    border-radius: 5px;
+    box-shadow: 10px 12px 10px 5px gray;
+    text-align: center;
+
+}
+
+.Reg {
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+.NewReg {
+    /* margin: 40px 0px 20px 45%; */
+    width: 200px;
+    /* padding: 10px; */
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.851);
+    border: 2px solid rgba(255, 68, 0, 0.851);
+    border-radius: 5px;
+}
+
+.FPB1 {
+    position: relative;
+}
+
+.FAN {
+    font-size: 11px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 130%;
+    left: 74%;
+}
+
+@media screen and (max-width:1137px) {
+    body{
+        .FAN{
+            top: 115%;
+            left: 163px;
+        }
+    }
+}
+.FPB2 {
+    position: relative;
+}
+
+.FP {
+    font-size: 11px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 68%;
+    top: 130%;
+}
+
+.fline {
+    margin: 20px;
+    border: 2px solid;
+}
+
+@media screen and (max-width: 522px) {
+    body {
+
+        .form2 {
+            width: 90vw;
+
+        }
+
+        /*  */
+        .form {
+            margin: auto;
+            padding: 20px;
+            width: 85vw;
+
+        }
+
+
+        .formdiv {
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        .submit {
+            width: 150px;
+            padding: 8px;
+            margin-left: 30vw;
+            margin-top: 5vw;
+        }
+
+        /*  */
+        .footer {
+            text-align: left;
+            width: 90vw;
+            font-size: 15px;
+            margin: auto;
+        }
+
+    }
+}
+
+@media screen and (max-width: 460px) {
+    body {
+        .form {
+            margin: auto;
+            padding: 20px;
+
+        }
+
+
+        .formdiv {
+            padding-right: 0px;
+            text-align: left;
+        }
+
+    }
+}
+
+@media screen and (max-width:251px) {
+    body {
+        #body {
+            display: none;
+
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+
+
+        .form {
+            margin: 0;
+            box-shadow: none;
+            border: none;
+            padding: 20px;
+            width: 85vw;
+
+        }
+
+
+        .formdiv {
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        .form2 {
+            width: 80vw;
+            text-align: left;
+            margin-left: 0;
+            box-shadow: none;
+            border: none;
+            padding: 20px;
+            width: 85vw;
+
+        }
+
+        .NewReg {
+            margin: 10vw;
+            padding: 10px;
+        }
+
+
+
+        .lb,
+        .lb1,
+        .lb2,
+        .lb3,
+        .lcap {
+            margin: 0;
+
+        }
+
+        .lb3 {
+            font-size: 15px;
+        }
+
+        /*  */
+        .lcap {
+            margin-right: 5px;
+            font-size: 20px;
+
+        }
+
+        #cap {
+            width: 90px;
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+
+        .refresh {
+            width: 25px;
+        }
+
+        /*  */
+        .sel {
+            width: 80vw;
+        }
+
+        .input1,
+        .input2,
+        .input3 {
+            width: 76vw;
+        }
+
+
+        footer {
+            text-align: left;
+            padding: 0;
+        }
+
+
+        .Email {
+            font-size: 13px;
+        }
+
+
+    }
+}
+
+
+
+
+.error {
+    color: red;
+}

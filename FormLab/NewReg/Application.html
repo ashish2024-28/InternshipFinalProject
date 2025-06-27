@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+
+    <style>
+        button {
+            margin: 10vw;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(255, 68, 0, 0.851);
+            border: 2px solid rgba(222, 82, 31, 0.851);
+            border-radius: 10px;
+        }
+        #box1{
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 5px gray;
+        }
+        #box2{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ask user formfilling or Go to LoginPage -->
+    <div id="box1">
+
+    <h1 style="text-align: center;">
+        ApplicationForm............
+        <br> fill details(Information).............
+    </h1>
+    
+    <button id="Sfilling" onclick="Form()" type="button">Start Filling....</button>
+
+    <a href="/FormLab/LoginPage.html">
+        <button id="LoginPage" onclick="LoginP()" type="button">Go to LoginPage</button>
+    </a>
+
+    </div>
+    
+<!--Start Form -->
+    <div id="box2"style="text-align:center" >
+        <h1>Form Loading ................</h1>
+
+    </div>
+
+
+
+    <script>
+        let Box1 = document.getElementById("box1");
+        let Box2 = document.getElementById("box2");
+        let SF = document.getElementById("Sfilling");
+        let LP = document.getElementById("LoginPage");
+
+        function Form(){
+            Box1.style.display = "none";
+            Box2.style.display = "block";
+            
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

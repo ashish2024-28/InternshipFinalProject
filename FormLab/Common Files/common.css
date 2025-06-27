@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif, "Martel Sans";
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+}
+
+.DHE {
+    width: 300px;
+}
+
+.JEE {
+    text-align: center;
+    font-size: 10px;
+}
+
+.NTA {
+    width: 300px;
+}
+
+
+
+.nav1 {
+    border: 2px solid;
+    background-color: #ff622a;
+    height: 25px;
+}
+
+.nav1 img {
+    margin-left: 50px;
+    height: 20px;
+}
+
+.Home {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#homeNav,tr {
+    border: 2px solid lightslategray;
+    border-collapse: collapse;
+    background-color: #ff622a;
+}
+
+#homeNav {
+    border: 2px solid black;
+    background-color: #ff622a;
+    position: relative;
+    z-index: 1;
+
+}
+
+table {
+    position: absolute;
+    /* width: 40vw; */
+}
+
+
+.h1 {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.form {
+    padding: 20px 0px 20px 15px;
+    margin: auto;
+    width: 60vw;
+    border-radius: 5px;
+    box-shadow: 10px 12px 10px 5px gray;
+
+}
+
+.formdiv {
+    text-align: center;
+}
+
+.lb {
+    margin-right: 150px;
+    font-size: 20px;
+
+}
+.lcap {
+    margin-right: 41px;
+    font-size: 20px;
+
+}
+
+#cap {
+    background-color: rgba(180, 180, 180, 0.527);
+    border-radius: 5px;
+    border: 2px solid rgba(147, 147, 147, 0.5);
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 64, 0, 0.876);
+    margin-top: 30px;
+
+}
+
+.ButtonC {
+    background-color: white;
+    border-color: white;
+    border: none;
+
+}
+
+.refresh {
+    width: 40px;
+    background-color: rgba(135, 150, 166, 0.733);
+}
+
+
+footer {
+    color: white;
+    margin-top: 25px;
+    background-color: rgba(81, 79, 79, 0.848);
+    padding: 50px;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: left;
+    width: 60vw;
+    margin: auto;
+}
+
+.FContact {
+    text-decoration: underline solid;
+}
+
+.footer li {
+    padding: 10px;
+    list-style: none;
+}
+
+@media screen and (max-width: 730px) {
+    body {
+
+        .DHE {
+            width: 120px;
+        }
+
+        .JEE {
+            text-align: center;
+            font-size: 5px;
+        }
+
+        .NTA {
+            width: 100px;
+        }
+
+
+    }
+}
