@@ -7,6 +7,17 @@
 
 }
 
+#body1 {
+    margin: 0;padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#box1 {
+    height: 100vh;
+    width: 100vw;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,6 +44,7 @@
 
 
 .nav1 {
+    text-align: left;
     border: 2px solid;
     background-color: #ff622a;
     height: 25px;
@@ -94,6 +106,7 @@ table {
     font-size: 20px;
 
 }
+
 .lcap {
     margin-right: 41px;
     font-size: 20px;
@@ -149,7 +162,6 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
-    body {
 
         .DHE {
             width: 120px;
@@ -166,4 +178,18 @@ footer {
 
 
     }
+
+
+@media screen and (max-width:230px) {
+        #body2 {
+            visibility: hidden;
+        }
+
+         #body1 {
+             background-color: red;
+            background-image:url("/FormLab/items/mobile_rotate_200dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png");
+            background-repeat: no-repeat;
+        } 
+
 }
+

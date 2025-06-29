@@ -7,8 +7,27 @@
     <title>Application Form</title>
 
     <style>
+        /* tow box on is display and one is display when click Start Filling and(1st display none) */
+        #box1 {
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 5px gray;
+            width: 80vw;
+            margin: auto;
+            box-shadow: 10px 10px 5px 5px gray;
+        }
+
+        #box2 {
+            display: none;
+        }
+
+        .containButton {
+            margin: 50px;
+            text-align: center;
+        }
+
         button {
-            margin: 10vw;
+            margin: 20px;
             padding: 15px;
             font-size: 20px;
             color: white;
@@ -16,56 +35,126 @@
             border: 2px solid rgba(222, 82, 31, 0.851);
             border-radius: 10px;
         }
-        #box1{
-            border: 2px solid;
-            border-radius: 10px;
-            box-shadow: 5px gray;
+
+        @media screen and (max-width: 550px) {
+            body {
+                #box1 {
+                    width: 90vw;
+                }
+            }
         }
-        #box2{
-            display: none;
+
+        @media screen and (max-width: 480px) {
+            body {
+                #box1 h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            body {
+                #box1 h1 {
+                    font-size: 20px;
+                }
+
+                button {
+                    padding: 10px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 280px) {
+            body {
+                #box1 h1 {
+                    font-size: 15px;
+                }
+
+                button {
+                    padding: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        @media screen and (max-width:251px) {
+            body {
+                #body2{
+                    display: none;
+                }
+            }
+        }
+        #body1{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
-    <!-- Ask user formfilling or Go to LoginPage -->
-    <div id="box1">
 
-    <h1 style="text-align: center;">
-        ApplicationForm............
-        <br> fill details(Information).............
-    </h1>
-    
-    <button id="Sfilling" onclick="Form()" type="button">Start Filling....</button>
+    <div id="body1">
+        <div id="body2">
 
-    <a href="/FormLab/LoginPage.html">
-        <button id="LoginPage" onclick="LoginP()" type="button">Go to LoginPage</button>
-    </a>
 
+            <!-- Ask user formfilling or Go to LoginPage -->
+            <div id="box1">
+
+                <h1 style="text-align: center;">
+                    ApplicationForm............
+                    <br> fill details(Information).............
+                </h1>
+
+                <div class="containButton">
+                    <button id="Sfilling" onclick="Form()" type="button">Start Filling........</button>
+                    <a href="/FormLab/LoginPage.html">
+                        <button id="LoginPage" onclick="LoginP()" type="button">Go to LoginPage</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!--Start Form -->
+            <div id="box2" style="text-align:center">
+                <h1>Form Loading ................</h1>
+
+            </div>
+
+
+        </div>
     </div>
-    
-<!--Start Form -->
-    <div id="box2"style="text-align:center" >
-        <h1>Form Loading ................</h1>
-
-    </div>
-
-
 
     <script>
         let Box1 = document.getElementById("box1");
         let Box2 = document.getElementById("box2");
         let SF = document.getElementById("Sfilling");
         let LP = document.getElementById("LoginPage");
-
-        function Form(){
+    
+        function Form() {
             Box1.style.display = "none";
             Box2.style.display = "block";
-            
+
+        }    
+
+        
+
+
+        let body1 = document.getElementById("body1");
+        let body2 = document.getElementById("body2");
+        if (body2.style.display == "none") {
+            body1.style.backgroundColor = "red";
+
+            body1.style.backgroundImage = "url('items/mobile_rotate_200dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png')";
+            // body1.style.backgroundRepeat = "no-repeat";
+            alert("Please Rotate Your Divice !");
         }
 
 
-        
+
+
     </script>
 </body>
 
